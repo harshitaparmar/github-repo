@@ -4,30 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Repo Project</title>
 </head>
-<body ng-controller="mainController as myRepos" ng-init="myRepos.loadAllRepos()">
+<body>
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			{{myRepos.pageheading}}
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:center">
+			<h3>To Find Public Repository</h3>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			{{myRepos.control}}
-
-		</div>
-	</div>
+	<div ng-view>
+              
+    </div> 
 </div>
 
 	<script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+
     <script type="text/javascript" src="angular/app.js"></script>
     
     <script type="text/javascript" src="angular/services/service-fact.js"></script>
     <!-- calling all controllers -->
     <script type="text/javascript" src="angular/controllers/maincontroller.js"></script>
+    <script type="text/javascript" src="angular/controllers/loadissuecontroller.js"></script>
+    <script type="text/javascript" src="angular/controllers/isuueDetailcontroller.js"></script>
+    <script type="text/javascript" src="angular/controllers/userDetailcontroller.js"></script>
+    <script type="text/javascript" src="angular/routes.js"></script>
 </body>
 </html>

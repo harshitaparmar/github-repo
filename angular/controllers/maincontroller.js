@@ -1,13 +1,18 @@
 
 myApp.controller('mainController',['$http','RepoService',function($http,RepoService){
 	var main=this;
+  var inputMin = 3;
+  this.someVal='';
 	this.pageheading="All Public Repository";
 	this.repos=[];
 	console.log(this.repos);
 	console.log("hello");
 	//loadAllRepos();
-	RepoService.loadAllRepos()
-	.then(function successCallback(response) {
+  console.log(this.someVal);
+  
+    console.log(this.someVal);
+	   RepoService.loadAllRepos()
+	     .then(function successCallback(response) {
           // this callback will be called asynchronously
           // when the response is available
           console.log(response);
@@ -21,6 +26,8 @@ myApp.controller('mainController',['$http','RepoService',function($http,RepoServ
           console.log(response);
 
         });
+  
+
 
       
 }]);

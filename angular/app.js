@@ -1,1 +1,1 @@
-var myApp = angular.module('repoApp', []);
+var myApp = angular.module('repoApp', ['ngRoute']);
